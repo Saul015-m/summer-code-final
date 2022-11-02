@@ -1,0 +1,50 @@
+.container-saf{
+    margin-top: 10%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-saf .box-saf{
+    position: relative;
+    padding: 5px;
+}
+
+/*.box-saf-frequence{
+    background-image: url(../IMAGE/fdb-frequence.jpeg);
+    background-size: cover;
+}
+
+.box-saf-gravite{
+    background-image: url(../IMAGE/fdb-gravite.jpeg);
+    background-size: cover;
+}*/
+.container-saf .box-saf::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 100%;
+    height: 100%;
+    border: 10px solid orange;
+    filter: url('#wavy');
+}
+
+.container-saf .box-saf::after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50%;
+    height: 100%;
+    border: 10px solid orange;
+    border-right: none;
+    filter: url('#wavy');
+    z-index: -1;
+}
+
+svg{
+    width: 0;
+    height: 0;
+}

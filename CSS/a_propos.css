@@ -1,0 +1,44 @@
+body{
+    font-size: 19px;
+}
+.section-saf{
+    min-height: 100vh;
+}
+.definition-container, .caracteristique, .cause{
+    padding-bottom: 10%;
+}
+
+
+.definition-container{
+    display: flex;
+}
+.definition-container div{
+    justify-content: center;
+    margin: auto;
+}
+.definition{
+    font-family: 'Fira Code', monospace;
+    width: 50%;
+}
+
+.caracteristique{
+    display: flex;
+}
+.caracteristique div{
+    text-align: center;
+}
+
+/*responsive*/
+@media screen and(max-width:1340px) {
+    body{
+        font-size: 17px;
+    }
+}
+@media screen and(max-width:620px) {
+    body{
+        font-size: 15px;
+    }
+    .definition-container, .caracteristique{
+        display: block,
+    }
+}

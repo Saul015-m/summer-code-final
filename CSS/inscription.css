@@ -1,0 +1,131 @@
+/* all of inscription */
+.inscription{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-0{
+    width: 85%;
+    height: 92vh;
+   /*  top: 0;
+    margin: -9px -9px;
+    padding: 0;
+    pading-bottom: -20px; */
+    position: absolute;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container-1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px 100px;
+}
+
+.container-1:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background: linear-gradient(black,#1c1cba); */
+    background-size: cover;
+    z-index: -1;
+}
+
+.container-2{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border:1px solid rgb(56, 56, 208);  */
+    background: linear-gradient(black,#034555,black);
+    border-radius: 0 30px 30px 0;
+}
+.left{
+    height: 100%;
+    border-right:1px solid rgb(56, 56, 208);
+    background: white;
+}    
+
+.inscription .container-0 .container-1 .container-2 .rigth{
+    padding: 20px 40px;
+    bottom: 10px;
+    color: #0FD4EB;
+}
+
+.inscription .container-0 .container-1 .container-2 .rigth span h2{
+    position: relative;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    color: #0FD4EB;
+}
+
+ input{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #07E7F8;
+    background: transparent;
+    text-align: center;
+    background-color: rgb(7, 231, 248,.5);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn_inscri{
+    margin-top: 50px;
+    padding: 5px 20px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #07E7F8;
+    background: transparent;
+    color: #0FD4EB;;
+    cursor: pointer;
+}
+
+.btn_inscri:hover{
+    background-color: aqua;
+    font-size: large;
+    color: black;
+}
+
+@media screen and (max-width:950px) {
+    .left{
+       display: none;
+    }    
+    .container-2{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0px 30px 0 30px;
+    }
+}
+
+.retour{
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    
+}

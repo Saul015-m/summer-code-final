@@ -1,0 +1,122 @@
+/*font family*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+/*all header*/
+.bg-nav{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: linear-gradient(#db3507,black/* ,#db3507 */);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding-right: 18px;
+    padding-bottom: auto;
+    z-index: 99;
+    box-shadow: 0 0 30px 0 black;
+  }
+
+ .bg-nav .logo{
+    padding: 0;
+    margin: 0;
+    padding-bottom: -5px;
+  }
+  .bg-nav .logo img{
+    margin-top: 5px;
+    border-radius: 5px;
+  }
+  
+  .bg-nav li {
+    float: right;
+  
+  }
+
+  .bg-nav li:first-child{
+    margin-right: 50px;
+  }
+  
+  .bg-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 16px;
+    text-decoration: none;
+  }
+  
+  .bg-nav li a:hover {  
+    background: linear-gradient(rgb(0, 0, 0,.7),rgb(219, 53, 7,.7)/* ,#db3507 */);
+  }
+  header{
+    position: relative;
+    background-image: url(../picture/header/F2WVXW4QTZE7ZPJC3XDF6YBYJ4.jpg);
+    background-size: cover;
+    padding-right: 18px;
+    padding-bottom: 10px;
+    margin-left: -10px;
+    filter: blur(9);
+    /* filter: grayscale(1); */
+    animation: hover 3s ease-in-out;
+  }
+  @keyframes hover {
+    0%{
+      filter:grayscale(1);
+    }
+    100%{
+       filter: none;
+    }
+  }
+
+  .header .letter{
+    height: 100vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    padding-right: 18px;
+    margin-top: -10px;
+    margin-left: -10px;
+    background-size: cover;
+    color: #ffffff;
+    font-family: 'Playfair Display,cursive';
+    font-weight: 700;
+  }
+
+
+  .header:before .letter{
+    background-image: url(../picture/header/no-stopping.png);
+  }
+
+
+  .header .letter h1{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    top: 50%;
+    /*font-size: 50px;
+    /* background-color: aqua; */
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /*margin-right: 20%; */
+    text-align: center;
+    text-shadow: 3px 4px 5px gray;
+    font-size: 300%;
+  }
+
+ 
+  @keyframes svg {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  .row{
+    margin: 0;
+  }

@@ -1,0 +1,132 @@
+.slider{
+    width: 460px;
+    overflow: hidden;
+    margin: auto;
+}
+.slides{
+    width: calc(460px*4);
+    animation: glisser 15s infinite;
+}
+.slide{
+    float: left;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.carousel{
+    width: 440px;
+    height: 270px;
+    margin-right: 20px;
+}
+@keyframes glisser{
+    0%{
+        transform: translate(0);
+    }
+    10%{
+        transform: translate(0);
+    }
+    25%{
+        transform: translate(-460px);
+    }
+    35%{
+        transform: translate(-460px);
+    }
+    50%{
+        transform: translate(-920px);
+    }
+    60%{
+        transform: translate(-920px);
+    }
+    100%{
+        transform: translate(-0);
+    }
+}
+
+/*responsive*/
+@media screen and (max-width:1340px){
+    .slider{
+        width: 395px;
+        overflow: hidden;
+        margin: auto;
+    }
+    .slides{
+        width: calc(395px*6);
+        animation: glisser 15s infinite;
+    }
+    .slide{
+        float: left;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .carousel{
+        width: 380px;
+        height: 220px;
+        margin-right: 15px;
+    }
+    @keyframes glisser{
+        0%{
+            transform: translate(0);
+        }
+        10%{
+            transform: translate(0);
+        }
+        25%{
+            transform: translate(-395px);
+        }
+        35%{
+            transform: translate(-395px);
+        }
+        50%{
+            transform: translate(-790px);
+        }
+        60%{
+            transform: translate(-790px);
+        }
+        100%{
+            transform: translate(0);
+        }
+    }
+}
+@media screen and (max-width:620px){
+    .slider{
+        width: 350px;
+        overflow: hidden;
+        margin: auto;
+    }
+    .slides{
+        width: calc(350px*6);
+        animation: glisser 15s infinite;
+    }
+    .slide{
+        float: left;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+    .carousel{
+        width: 345px;
+        height: 195px;
+        margin-right: 5px;
+    }
+    @keyframes glisser{
+        0%{
+            transform: translate(0);
+        }
+        10%{
+            transform: translate(0);
+        }
+        25%{
+            transform: translate(-345px);
+        }
+        35%{
+            transform: translate(-345px);
+        }
+        50%{
+            transform: translate(-690px);
+        }
+        60%{
+            transform: translate(-690px);
+        }
+        100%{
+            transform: translate(0);
+        }
+    }
+}
